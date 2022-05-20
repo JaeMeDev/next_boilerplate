@@ -1,6 +1,13 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint", "jest"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier",
+    "@typescript-eslint",
+    "jest",
+    "cypress"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -9,6 +16,7 @@
     "plugin:prettier/recommended",
     "plugin:import/recommended",
     "plugin:jest/recommended",
+    "plugin:cypress/recommended",
     "next",
     "next/core-web-vitals",
     "airbnb-base"
@@ -25,6 +33,7 @@
       }
     ],
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "jest/expect-expect": "off"
   }
 }
