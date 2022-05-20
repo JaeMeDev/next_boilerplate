@@ -1,11 +1,16 @@
 {
   "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "ignorePatterns": [".next/", ".pnp.cjs", ".yarn/"],
   "plugins": [
     "react",
     "react-hooks",
     "prettier",
     "@typescript-eslint",
-    "jest",
     "cypress"
   ],
   "extends": [
@@ -15,11 +20,16 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:import/recommended",
-    "plugin:jest/recommended",
-    "plugin:cypress/recommended",
     "next",
     "next/core-web-vitals",
     "airbnb-base"
+  ],
+  "overrides": [
+    {
+      "extends": ["plugin:cypress/recommended"],
+      "files": ["cypress/**/*.ts"],
+      "rules": {}
+    }
   ],
   "rules": {
     "import/extensions": [
@@ -33,7 +43,6 @@
       }
     ],
     "no-console": ["error", { "allow": ["warn", "error"] }],
-    "@typescript-eslint/no-var-requires": "off",
-    "jest/expect-expect": "off"
+    "@typescript-eslint/no-var-requires": "off"
   }
 }
