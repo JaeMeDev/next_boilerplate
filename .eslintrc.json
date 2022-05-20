@@ -1,6 +1,6 @@
 {
   "parser": "@typescript-eslint/parser",
-  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "prettier", "@typescript-eslint", "jest"],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -8,6 +8,7 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:import/recommended",
+    "plugin:jest/recommended",
     "next",
     "next/core-web-vitals",
     "airbnb-base"
@@ -23,6 +24,7 @@
         "tsx": "never"
       }
     ],
-    "no-console": ["error", { "allow": ["warn", "error"] }]
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "@typescript-eslint/no-var-requires": "off"
   }
 }
