@@ -6,11 +6,17 @@ const createJestConfig = nextJest({
 
 const customJestConfig = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
-  moduleDirectories: ['node_modules', '<rootDir>/src'],
+  moduleDirectories: ['node_modules', '<rootDir>/'],
   moduleNameMapper: {
     '^@/components/(.*)$': '<rootDir>/src/components/$1',
     '^@/pages/(.*)$': '<rootDir>/src/pages/$1',
   },
+  testPathIgnorePatterns: [
+    'node_modules',
+    '<rootDir>.*/public',
+    '<rootDir>/.next/',
+    'cypress',
+  ],
   testEnvironment: 'jest-environment-jsdom',
 };
 

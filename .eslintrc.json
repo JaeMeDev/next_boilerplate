@@ -5,13 +5,14 @@
     "es2021": true,
     "jest": true
   },
-  "ignorePatterns": [".next/", ".pnp.cjs", ".yarn/"],
+  "ignorePatterns": [".next/", ".pnp.cjs", ".pnp.loader.mjs"],
   "plugins": [
     "react",
     "react-hooks",
     "prettier",
     "@typescript-eslint",
-    "cypress"
+    "jest",
+    "testing-library"
   ],
   "extends": [
     "eslint:recommended",
@@ -20,6 +21,8 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:import/recommended",
+    "plugin:jest/recommended",
+    "plugin:testing-library/react",
     "next",
     "next/core-web-vitals",
     "airbnb-base"
@@ -28,7 +31,9 @@
     {
       "extends": ["plugin:cypress/recommended"],
       "files": ["cypress/**/*.ts"],
-      "rules": {}
+      "rules": {
+        "jest/expect-expect": "off"
+      }
     }
   ],
   "rules": {
