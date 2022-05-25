@@ -12,7 +12,8 @@
     "prettier",
     "@typescript-eslint",
     "jest",
-    "testing-library"
+    "testing-library",
+    "storybook"
   ],
   "extends": [
     "eslint:recommended",
@@ -22,6 +23,7 @@
     "plugin:prettier/recommended",
     "plugin:import/recommended",
     "plugin:jest/recommended",
+    "plugin:storybook/recommended",
     "plugin:testing-library/react",
     "next",
     "next/core-web-vitals",
