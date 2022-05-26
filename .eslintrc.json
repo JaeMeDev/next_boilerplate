@@ -11,8 +11,6 @@
     "react-hooks",
     "prettier",
     "@typescript-eslint",
-    "jest",
-    "testing-library",
     "storybook"
   ],
   "extends": [
@@ -22,21 +20,10 @@
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended",
     "plugin:import/recommended",
-    "plugin:jest/recommended",
     "plugin:storybook/recommended",
-    "plugin:testing-library/react",
     "next",
     "next/core-web-vitals",
     "airbnb-base"
-  ],
-  "overrides": [
-    {
-      "extends": ["plugin:cypress/recommended"],
-      "files": ["cypress/**/*.ts"],
-      "rules": {
-        "jest/expect-expect": "off"
-      }
-    }
   ],
   "rules": {
     "import/extensions": [
@@ -52,5 +39,26 @@
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "@typescript-eslint/no-var-requires": "off",
     "import/prefer-default-export": "off"
-  }
+  },
+  "overrides": [
+    // testing
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "plugins": ["jest", "jest-formatting", "testing-library", "jest-dom"],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-formatting/recommended",
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended"
+      ]
+    },
+    // cypress
+    {
+      "extends": ["plugin:cypress/recommended"],
+      "files": ["cypress/**/*.ts"],
+      "rules": {
+        "jest/expect-expect": "off"
+      }
+    }
+  ]
 }
