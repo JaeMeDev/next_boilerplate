@@ -36,7 +36,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.18.0"],\
             ["@commitlint/cli", "npm:17.0.0"],\
             ["@commitlint/config-conventional", "npm:17.0.0"],\
-            ["@mdx-js/react", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:1.6.22"],\
             ["@next/bundle-analyzer", "npm:12.1.6"],\
             ["@storybook/addon-actions", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:6.5.5"],\
             ["@storybook/addon-docs", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:6.5.5"],\
@@ -62,6 +61,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:5.25.0"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.6"],\
             ["babel-loader", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:8.2.5"],\
+            ["cross-env", "npm:7.0.3"],\
             ["cypress", "npm:9.6.1"],\
             ["eslint", "npm:8.15.0"],\
             ["eslint-config-airbnb-base", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:15.0.0"],\
@@ -5178,10 +5178,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:1.6.22", {\
-          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-4650d7b428/0/cache/@mdx-js-react-npm-1.6.22-57e4c05c2b-bc84bd514b.zip/node_modules/@mdx-js/react/",\
+        ["virtual:e8eec6cd6582fde456e4bc9f4446edafea78a3d0122a686aec0dfebeacb9b23f2225cd4bb93d637f114d880c03c30704c44b6fa00bad23ec4441bee3e6e9a406#npm:1.6.22", {\
+          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-f56f046907/0/cache/@mdx-js-react-npm-1.6.22-57e4c05c2b-bc84bd514b.zip/node_modules/@mdx-js/react/",\
           "packageDependencies": [\
-            ["@mdx-js/react", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:1.6.22"],\
+            ["@mdx-js/react", "virtual:e8eec6cd6582fde456e4bc9f4446edafea78a3d0122a686aec0dfebeacb9b23f2225cd4bb93d637f114d880c03c30704c44b6fa00bad23ec4441bee3e6e9a406#npm:1.6.22"],\
             ["@types/react", "npm:18.0.9"],\
             ["react", "npm:18.1.0"]\
           ],\
@@ -5703,7 +5703,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/plugin-transform-react-jsx", "virtual:e8eec6cd6582fde456e4bc9f4446edafea78a3d0122a686aec0dfebeacb9b23f2225cd4bb93d637f114d880c03c30704c44b6fa00bad23ec4441bee3e6e9a406#npm:7.17.12"],\
             ["@babel/preset-env", "virtual:c434339fe4fa1f8971e19eda167b4949c5cbc3a05c4fc2590b6dfd872134d5875db0440d6aa6e6d0c181e50a93bb3242811005ad50d546c412c68aa9f932b39d#npm:7.18.0"],\
             ["@jest/transform", "npm:26.6.2"],\
-            ["@mdx-js/react", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:1.6.22"],\
+            ["@mdx-js/react", "virtual:e8eec6cd6582fde456e4bc9f4446edafea78a3d0122a686aec0dfebeacb9b23f2225cd4bb93d637f114d880c03c30704c44b6fa00bad23ec4441bee3e6e9a406#npm:1.6.22"],\
             ["@storybook/addons", "virtual:1fb5ef88bb540c0ae6ea3b6d6268a053bd90109ae7a072dee957e0c69d8fac25fd6080d67a91255acea1ff7fc65aeb5a71c3618da28a1a694559397662691bf5#npm:6.5.5"],\
             ["@storybook/api", "virtual:1fb5ef88bb540c0ae6ea3b6d6268a053bd90109ae7a072dee957e0c69d8fac25fd6080d67a91255acea1ff7fc65aeb5a71c3618da28a1a694559397662691bf5#npm:6.5.5"],\
             ["@storybook/components", "virtual:1fb5ef88bb540c0ae6ea3b6d6268a053bd90109ae7a072dee957e0c69d8fac25fd6080d67a91255acea1ff7fc65aeb5a71c3618da28a1a694559397662691bf5#npm:6.5.5"],\
@@ -12280,6 +12280,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/create-require-npm-1.1.1-839884ca2e-a9a1503d43.zip/node_modules/create-require/",\
           "packageDependencies": [\
             ["create-require", "npm:1.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["cross-env", [\
+        ["npm:7.0.3", {\
+          "packageLocation": "./.yarn/cache/cross-env-npm-7.0.3-96d81820f4-26f2f3ea2a.zip/node_modules/cross-env/",\
+          "packageDependencies": [\
+            ["cross-env", "npm:7.0.3"],\
+            ["cross-spawn", "npm:7.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -19493,7 +19503,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/core", "npm:7.18.0"],\
             ["@commitlint/cli", "npm:17.0.0"],\
             ["@commitlint/config-conventional", "npm:17.0.0"],\
-            ["@mdx-js/react", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:1.6.22"],\
             ["@next/bundle-analyzer", "npm:12.1.6"],\
             ["@storybook/addon-actions", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:6.5.5"],\
             ["@storybook/addon-docs", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:6.5.5"],\
@@ -19519,6 +19528,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@typescript-eslint/parser", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:5.25.0"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.6"],\
             ["babel-loader", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:8.2.5"],\
+            ["cross-env", "npm:7.0.3"],\
             ["cypress", "npm:9.6.1"],\
             ["eslint", "npm:8.15.0"],\
             ["eslint-config-airbnb-base", "virtual:cd7bc5def67cb39d3a91e0cb695939214056f847208c4cd0b014dda94146e952733022014cf0cc5631162cf00d268f1c0dc36730266b19c32fa7475eb31b3b02#npm:15.0.0"],\
