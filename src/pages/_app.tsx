@@ -6,9 +6,10 @@ import defaultNextSeoConfig from '../../next-seo.config';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <DefaultSeo {...defaultNextSeoConfig}>
+    <>
+      <DefaultSeo {...defaultNextSeoConfig} />
       <Component {...pageProps} />
-    </DefaultSeo>
+    </>
   );
 }
 
