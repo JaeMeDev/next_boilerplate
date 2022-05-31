@@ -51,3 +51,6 @@ yarn-error.log*
 cypress/screenshots
 cypress/videos
 cypress/log
+
+storybook-static
+
