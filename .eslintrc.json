@@ -23,7 +23,8 @@
     "plugin:storybook/recommended",
     "next",
     "next/core-web-vitals",
-    "airbnb-base"
+    "airbnb-base",
+    "prettier"
   ],
   "rules": {
     "import/extensions": [
@@ -38,7 +39,13 @@
     ],
     "no-console": ["error", { "allow": ["warn", "error"] }],
     "@typescript-eslint/no-var-requires": "off",
-    "import/prefer-default-export": "off"
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "@typescript-eslint/no-unused-vars": ["error"],
+    "import/prefer-default-export": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["off"],
+    "class-methods-use-this": "off"
   },
   "overrides": [
     // testing
